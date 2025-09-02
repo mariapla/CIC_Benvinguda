@@ -1,0 +1,155 @@
+/* Tipografías */
+:root{
+  --bg1:#FF00BA;
+  --bg2:#00FFFF;
+  --bg3:#FC371C;
+  --bg4:#DAFDBA;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+  height:100vh;
+}
+
+body{
+  margin:0;
+  font-family: 'Roboto', Arial, sans-serif;
+  color:#111;
+  background:#fff;
+  line-height:1.5;
+}
+
+/* FLEX: 2 filas x 4 columnas con wrap. Sin huecos. */
+.grid{
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Cada tile: 25% del ancho, cuadrado perfecto; sin huecos ni bordes */
+.tile{
+  width: 25%;
+  aspect-ratio: 1 / 1;   /* cuadrado */
+  margin: 0;
+  padding: 12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-size: clamp(16px, 2.4vw, 28px);
+  font-weight: 700;
+  color:#111;
+  border:none;
+  border-radius: 0;
+  cursor:pointer;
+  user-select:none;
+  transition: filter .15s ease;
+}
+
+
+
+@media (max-width: 900px){
+  .tile{ width: 50%; }   /* 2 columnas en móviles medianos */
+}
+
+@media (max-width: 520px){
+  .tile{ width: 100%; }  /* 1 columna en móviles pequeños */
+}
+
+.tile:hover,
+.tile:focus-visible{
+  filter: brightness(.95) saturate(1.05);
+  outline: none;
+}
+
+/* Backdrop del modal: negro translúcido */
+.backdrop{
+  position: fixed;
+  inset:0;
+  background: rgba(0,0,0,.6);
+  z-index: 10;
+}
+
+/* Modal negro casi full-viewport */
+.modal{
+  border:none;
+  padding:0;
+  width: 92vw;
+  height: 92vh;
+  max-width: 92vw;
+  max-height: 92vh;
+  background: #000;
+  color: ghostwhite;
+  z-index: 11;
+}
+
+.modal::backdrop{
+  background: transparent;
+}
+
+.modal[open]{
+  animation: pop .18s ease;
+}
+
+@keyframes pop{
+  from{ transform: scale(.98); opacity: .7; }
+  to{ transform: scale(1); opacity: 1; }
+}
+
+.modal__title{
+   margin:0;
+  padding: 24px 64px 0 24px;
+  font-size: clamp(28px, 3vw, 40px);  /* más grande */
+  font-weight: 800;                   /* más grueso */
+  color:#fff;
+}
+
+.modal__content{
+  padding: 16px 32px 32px 32px;
+  height: calc(100% - 80px);
+  overflow:auto;
+  font-size: clamp(18px, 2vw, 22px);  /* mayor que antes */
+  font-weight: 500;                   /* texto más marcado */
+  line-height: 1.6;
+}
+
+.modal__content h3{
+  margin-top: 1.4em;
+  margin-bottom: .5em;
+  font-size: 1.3em;   /* resaltar subtítulos */
+  font-weight: 700;
+  color:#fff;
+}
+
+.modal__content p, .modal__content li{
+   color:#f1f1f1;
+}
+
+.modal__content ul{
+  margin: .2em 0 1em 1.2em;
+}
+
+/* Aspa de cierre en esquina superior derecha */
+.modal__close{
+  position:absolute;
+  top:8px;
+  right:8px;
+  border:none;
+  background: transparent;
+  color:#fff;
+  font-size: 32px;
+  line-height: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor:pointer;
+}
+
+.modal__close:hover{
+  background: rgba(255,255,255,.1);
+}

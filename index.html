@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Benvinguda | CIC FP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="CIC_CICLES_FAVICON.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <main id="app" class="grid" aria-label="Índice interactivo">
+      <!-- Los ítems se inyectan vía scripts.js -->
+    </main>
+
+    <!-- Backdrop + Modal -->
+    <div id="modalBackdrop" class="backdrop" data-close="true" hidden></div>
+    <dialog id="modal" class="modal" aria-labelledby="modalTitle" aria-describedby="modalContent">
+      <button class="modal__close" aria-label="Cerrar" data-close="true">×</button>
+      <h2 id="modalTitle" class="modal__title"></h2>
+      <div id="modalContent" class="modal__content"></div>
+    </dialog>
+
+    <script src="scripts.js" defer></script>
+  </body>
+</html>
