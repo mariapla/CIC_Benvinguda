@@ -30,6 +30,7 @@ const DATA = [
         <li>Direcció general: <strong>Carles Duarte</strong></li>
         <li>Coordinació APD: <strong>Olga Suñol</strong></li>
         <li>Coordinació ASIX: <strong>Jorge Wimes</strong></li>
+        <li>Coordinació Anglès: <strong>Marie France Masson</strong></li>
         <li>Responsable de comunicació: <strong>Mireia Serrano</strong></li>
       </ul>
     `},
