@@ -153,3 +153,19 @@ body{
 .modal__close:hover{
   background: rgba(255,255,255,.1);
 }
+
+/* Enlaces dentro de los modales */
+.modal-content a {
+  color: #ffcc00; /* yellow: enlace no visitado */
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.modal-content a:visited {
+  color: #ff4fb8; /* pink: enlace visitado */
+}
+
+.modal-content a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
