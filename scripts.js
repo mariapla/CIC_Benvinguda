@@ -1,21 +1,23 @@
 // Dades de l'índex i continguts
 const DATA = [
-  {
+ {
   titulo: "ClickEdu",
   contenido: `
+    <h3>Què és?</h3>
+    <p>És el nostre sistema de gestió escolar i una secretaria acadèmica virtual. Rebràs unes credencials per accedir-hi.</p>
 
-### Què és?
-
-És el nostre sistema de gestió escolar i una secretaria acadèmica virtual. Rebràs unes credencials per accedir-hi.
-
-### Què fem a ClickEdu?
-
-  * Passem llista: és molt important passar llista abans de sortir de l'aula. Si no ho fem i ho deixem per després, es pot donar que es justifiqui una falta encara no posada, i que quan per fi es posi, quedi sense justificar.
-  * <a href="docs/notesAPD.pdf" target="_blank" rel="noopener">Posem notes finals APD</a> | <a href="docs/notesFP.pdf" target="_blank" rel="noopener">Posem notes finals FP</a>
-  * Accedim a Moodle
-  * Si ets tutora o coordinadora, et comuniques amb l’alumnat i les famílies des d’aquí
-
-`
+    <h3>Què fem a ClickEdu?</h3>
+    <ul>
+      <li><strong>Passem llista:</strong> és molt important passar llista abans de sortir de l'aula. Si no ho fem i ho deixem per després, es pot donar que es justifiqui una falta encara no posada, i que quan per fi es posi, quedi sense justificar.</li>
+      <li>
+        <a href="docs/notesAPD.pdf" target="_blank" rel="noopener">Posem notes finals APD</a>
+        |
+        <a href="docs/notesFP.pdf" target="_blank" rel="noopener">Posem notes finals FP</a>
+      </li>
+      <li>Accedim a Moodle</li>
+      <li>Si ets tutora o coordinadora, et comuniques amb l’alumnat i les famílies des d’aquí</li>
+    </ul>
+  `
 },
   { titulo: "Moodle", contenido: `
       <h3>Què és?</h3>
