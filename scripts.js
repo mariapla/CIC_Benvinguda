@@ -47,10 +47,10 @@ const DATA = [
         <li><a href="docs/26-27_NormativaCentre.pdf" target="_blank">Normativa del centre</a></li>
         <li><a href="docs/26-27_APD_CriterisAvaluacio.pdf" target="_blank">Criteris d’avaluació APD</a> | <a href="docs/26-27_FP_CriterisAvaluacio.pdf" target="_blank">Criteris d’avaluació Informàtica i Comunicacions</a></li>
        <li>
-  <a href="docs/MòdulsAPGI.pdf" target="_blank" rel="noopener noreferrer">Mòduls APGI</a> |
-  <a href="docs/MòdulsGPI.pdf" target="_blank" rel="noopener noreferrer">Mòduls GPI</a> |
-  <a href="docs/MòdulsDEC.pdf" target="_blank" rel="noopener noreferrer">Mòduls DEC</a> |
-  <a href="docs/MòdulsASIX.pdf" target="_blank" rel="noopener noreferrer">Mòduls ASIX</a>
+  <a href="docs/Moduls_APGI.pdf" target="_blank" rel="noopener noreferrer">Mòduls APGI</a> |
+  <a href="docs/Moduls_GPI.pdf" target="_blank" rel="noopener noreferrer">Mòduls GPI</a> |
+  <a href="docs/Moduls_DEC.pdf" target="_blank" rel="noopener noreferrer">Mòduls DEC</a> |
+  <a href="docs/Moduls_ASIX.pdf" target="_blank" rel="noopener noreferrer">Mòduls ASIX</a>
 </li>
          
         <li> <a href="docs/PlantillaPlaDocent.docx" download>Pla docent (plantilla)</a></li>
