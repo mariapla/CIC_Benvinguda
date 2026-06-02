@@ -44,7 +44,7 @@ const DATA = [
   { titulo: "Documentació", contenido: `
       <p>Documentació disponible a Secretaria Acadèmica:</p>
       <ul>
-        <li><a href="docs/25-26_NormativaCentre.pdf">Normativa del centre</a></li>
+        <li><a href="docs/26-27_NormativaCentre.pdf">Normativa del centre</a></li>
         <li>Criteris d’avaluació</li>
         <li> <a href="docs/PlantillaPlaDocent.docx" download>Pla docent (plantilla)</a></li>
         <li>Calendari escolar</li>
