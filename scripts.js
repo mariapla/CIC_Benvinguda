@@ -44,9 +44,14 @@ const DATA = [
   { titulo: "Documentació", contenido: `
       <p>Documentació disponible a Secretaria Acadèmica:</p>
       <ul>
-        <li><a href="docs/26-27_NormativaCentre.pdf">Normativa del centre</a></li>
-        <li><a href="docs/26-27_APD_CriterisAvaluacio.pdf">Criteris d’avaluació APD</a> | <a href="docs/26-27_FP_CriterisAvaluacio.pdf">Criteris d’avaluació Informàtica i Comunicacions</a></li>
-        <li>Mòduls APGI | Mòduls GPI | Mòduls DEC | Mòduls ASIX</li>
+        <li><a href="docs/26-27_NormativaCentre.pdf" target="_blank">Normativa del centre</a></li>
+        <li><a href="docs/26-27_APD_CriterisAvaluacio.pdf" target="_blank">Criteris d’avaluació APD</a> | <a href="docs/26-27_FP_CriterisAvaluacio.pdf" target="_blank">Criteris d’avaluació Informàtica i Comunicacions</a></li>
+       <li>
+  <a href="docs/MòdulsAPGI.pdf" target="_blank" rel="noopener noreferrer">Mòduls APGI</a> |
+  <a href="docs/MòdulsGPI.pdf" target="_blank" rel="noopener noreferrer">Mòduls GPI</a> |
+  <a href="docs/MòdulsDEC.pdf" target="_blank" rel="noopener noreferrer">Mòduls DEC</a> |
+  <a href="docs/MòdulsASIX.pdf" target="_blank" rel="noopener noreferrer">Mòduls ASIX</a>
+</li>
          
         <li> <a href="docs/PlantillaPlaDocent.docx" download>Pla docent (plantilla)</a></li>
         <li>Calendari escolar</li>
