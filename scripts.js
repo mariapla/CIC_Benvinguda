@@ -45,7 +45,9 @@ const DATA = [
       <p>Documentació disponible a Secretaria Acadèmica:</p>
       <ul>
         <li><a href="docs/26-27_NormativaCentre.pdf">Normativa del centre</a></li>
-        <li>Criteris d’avaluació</li>
+        <li><a href="docs/26-27_APD_CriterisAvaluacio.pdf">Criteris d’avaluació APD</a> | <a href="docs/26-27_FP_CriterisAvaluacio.pdf">Criteris d’avaluació Informàtica i Comunicacions</a></li>
+        <li>Mòduls APGI | Mòduls GPI | Mòduls DEC | Mòduls ASIX</li>
+         
         <li> <a href="docs/PlantillaPlaDocent.docx" download>Pla docent (plantilla)</a></li>
         <li>Calendari escolar</li>
         <li>Horaris</li>
