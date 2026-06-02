@@ -56,7 +56,13 @@ const DATA = [
         <li> <a href="docs/PlantillaPlaDocent.docx" download>Pla docent (plantilla)</a></li>
         <li>Calendari escolar</li>
         <li>Horaris</li>
-        <li>Currículum</li>
+        <li>
+  <a href="docs/CV_APGI.pdf" target="_blank" rel="noopener noreferrer">Currículum APGI</a> |
+  <a href="docs/CV_ASIX.pdf" target="_blank" rel="noopener noreferrer">Currículum ASIX</a> |
+  <a href="docs/CV_DEC.pdf" target="_blank" rel="noopener noreferrer">Currículum DEC</a> |
+  <a href="docs/CV_GI.pdf" target="_blank" rel="noopener noreferrer">Currículum GI</a> |
+  <a href="docs/CV_GP.pdf" target="_blank" rel="noopener noreferrer">Currículum GP</a>
+</li>
       </ul>
     `},
   { titulo: "Sóc tutora", contenido: `
