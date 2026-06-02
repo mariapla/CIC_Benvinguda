@@ -93,7 +93,11 @@ const DATA = [
       <p>Professora -> Tutora -> Secretaria -> Coordinadora -> Directora</p>
     `},
   { titulo: "Beneficis socials", contenido: `
-      <p>Diversos descomptes a l’escolarització dins de la Institució.</p>
+      <li>Diversos descomptes a l’escolarització dins de la Institució per a treballadores.</li>
+      <li>Diversos descomptes a l’escolarització dins de la Institució per a ALUMNI.</li>
+      <li>Diversos descomptes a l’escolarització dins de la Institució per a famílies amb més de dos germans.</li>
+      <li>DiR: quota de 42.99€</li>
+      <li>Retribució flexible: oferta DKV</li>
     `}
 ];
 
