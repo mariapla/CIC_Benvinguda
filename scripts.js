@@ -98,6 +98,8 @@ const DATA = [
       <li>Diversos descomptes a l’escolarització dins de la Institució per a famílies amb més de dos germans.</li>
       <li>DiR: quota de 42.99€</li>
       <li>Retribució flexible: oferta DKV</li>
+      <br>
+      <p>Més detalls a Secretaria Acadèmica</p>
     `}
 ];
 
