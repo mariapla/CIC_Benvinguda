@@ -47,7 +47,7 @@ const DATA = [
         <li>Normativa</li>
         <li>Criteris d’avaluació</li>
         <li>Drets i Deures</li>
-         * <a href="Docs/PlantillaPlaDocent.docx" download>Pla docent (plantilla)</a>
+         <li> <a href="Docs/PlantillaPlaDocent.docx" download>Pla docent (plantilla)</a></li>
         <li>Calendari escolar</li>
         <li>Horaris</li>
         <li>Currículum</li>
