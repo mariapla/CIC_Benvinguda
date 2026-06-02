@@ -155,17 +155,18 @@ body{
 }
 
 /* Enlaces dentro de los modales */
-.modal-content a {
-  color: #ffcc00; /* yellow: enlace no visitado */
+.modal__content a {
+  color: #8DB600; /* verde manzana: enlace normal */
   font-weight: 600;
   text-decoration: underline;
 }
 
-.modal-content a:visited {
-  color: #ff4fb8; /* pink: enlace visitado */
+.modal__content a:visited {
+  color: #FFB6C1; /* rosa clarito: enlace visitado */
 }
 
-.modal-content a:hover {
+.modal__content a:hover,
+.modal__content a:focus-visible {
   color: #ffffff;
   text-decoration: none;
 }
