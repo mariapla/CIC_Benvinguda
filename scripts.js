@@ -90,7 +90,7 @@ const DATA = [
       </ul>
     `},
   { titulo: "Canals de comunicació", contenido: `
-      <p>Professional — Direcció — Secretaria Acadèmica — Coordinació — Tutora</p>
+      <p>Professora -> Tutora -> Secretaria -> Coordinadora -> Directora</p>
     `},
   { titulo: "Beneficis socials", contenido: `
       <p>Diversos descomptes a l’escolarització dins de la Institució.</p>
