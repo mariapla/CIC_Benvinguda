@@ -24,7 +24,7 @@ const DATA = [
       <p>És el nostre entorn virtual d’aprenentatge, una classe virtual. Hi accediràs a través de ClickEdu.</p>
       <h3>Què fem a Moodle?</h3>
       <ul>
-        <li>Pengem la programació didàctica, continguts, proves avaluatives i exàmens</li>
+       <li>Pengem la <a href="Docs/PlantillaPlaDocent.docx" download>programació didàctica</a>, continguts, proves avaluatives i exàmens</li>
         <li>Posem notes parcials i feedback dels instruments avaluatius</li>
         <li>El claustre docent es comunica amb l’alumnat via Moodle i/o mail de la fundació</li>
       </ul>
