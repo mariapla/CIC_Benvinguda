@@ -103,6 +103,7 @@ const DATA = [
         <li>Seràs l’interlocutor amb el DOP</li>
         <li>Convocaràs tutories grupals</li>
         <li>Demanaràs feedback del grup-classe al claustre</li>
+        <li><a href="docs/BasePresentacionsTutores.pdf" target="_blank" rel="noopener noreferrer">Model de presentació d'inici de curs</a> (atenció amb les dates, només es un model!)</li>
       </ul>
     `},
   {
