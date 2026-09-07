@@ -28,6 +28,7 @@ const DATA = [
        <li>Pengem la <a href="docs/PlantillaPlaDocent.docx" download>programació didàctica</a>, continguts, proves avaluatives i exàmens</li>
         <li>Posem notes parcials i feedback dels instruments avaluatius</li>
         <li>El claustre docent es comunica amb l’alumnat via Moodle i/o mail de la fundació</li>
+        <li>Petita <a href="docs/2026_Guia_rapida_Moodle_4_5.pdf" target="_blank">guía </a> dels canvis que ha portat l'actualització Moodle 4.5</li>
       </ul>
     `},
   {
@@ -59,7 +60,16 @@ const DATA = [
         <li> <a href="docs/PlantillaPlaDocent.docx" download>Pla docent (plantilla)</a></li>
         <li><a href="docs/CALENDARI_2026-2027.pdf" target="_blank">Calendari escolar</a></li>
         <li><a href="docs/CALENDARI_2026-2027_profes.pdf" target="_blank">Calendari escolar - detall per a profes</a></li>
-        <li>Horaris</li>
+        <li>Horaris: 
+          <a href="docs/001_APGI_1_26-27_Horaris.pdf" target="_blank">APGI1</a> |
+          <a href="docs/002_APGI_2_26-27_Horaris.pdf" target="_blank">APGI2</a> |
+          <a href="docs/003_GPI_1_26-27_Horaris.pdf" target="_blank">GPI1</a> |
+          <a href="docs/004_GPI_2_26-27_Horaris.pdf" target="_blank">GPI2</a> |
+          <a href="docs/005_DEC_1_26-27_Horaris.pdf" target="_blank">DEC1</a> |
+          <a href="docs/" target="_blank">ASIX1</a> |
+          <a href="docs/" target="_blank">ASIX2</a> 
+        </li>
+        </li>
         <li>
   <a href="docs/CV_APGI.pdf" target="_blank" rel="noopener noreferrer">Currículum APGI</a> |
   <a href="docs/CV_ASIX.pdf" target="_blank" rel="noopener noreferrer">Currículum ASIX</a> |
