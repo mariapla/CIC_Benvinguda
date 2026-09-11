@@ -170,3 +170,140 @@ body{
   color: #ffffff;
   text-decoration: none;
 }
+
+/* Botó sticky de contrasenyes */
+.sticky-password-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+
+  background: #8DB600;
+  color: #111827;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+
+  padding: 14px 22px;
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.sticky-password-btn:hover,
+.sticky-password-btn:focus-visible {
+  background: #FFB6C1;
+  color: #111827;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.45);
+}
+
+/* Finestra emergent de contrasenyes */
+.password-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  background: rgba(0, 0, 0, 0.72);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+}
+
+.password-modal__box {
+  position: relative;
+  width: min(520px, 100%);
+
+  background: #111827;
+  color: #ffffff;
+
+  border: 2px solid #8DB600;
+  border-radius: 24px;
+
+  padding: 32px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.password-modal__box h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #FFB6C1;
+}
+
+.password-modal__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.password-modal__item:last-child {
+  border-bottom: none;
+}
+
+.password-modal__item strong {
+  color: #8DB600;
+}
+
+.password-modal__item span {
+  font-family: monospace;
+  font-size: 1.05rem;
+
+  background: rgba(255, 255, 255, 0.12);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.password-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+
+  background: none;
+  border: none;
+
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.password-modal__close:hover {
+  color: #FFB6C1;
+}
+
+/* Botó sticky Brandbook */
+.sticky-brandbook-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 86px;
+  z-index: 1000;
+
+  background: #FFB6C1;
+  color: #111827;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+
+  padding: 14px 22px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.sticky-brandbook-btn:hover,
+.sticky-brandbook-btn:focus-visible {
+  background: #8DB600;
+  color: #111827;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.45);
+}

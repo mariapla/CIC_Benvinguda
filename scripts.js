@@ -8,6 +8,7 @@ const DATA = [
 
     <h3>Què fem a ClickEdu?</h3>
     <ul>
+    <li>Els Cicles de Informàtica i Comunicacions, <a href="docs/Introduir_RAs_ClickEdu.pdf" target="_blank" rel="noopener noreferrer">introduïm i configurem els RA </a>dels nostres mòduls</li>
       <li><strong>Passem llista:</strong> és molt important passar llista abans de sortir de l'aula. Si no ho fem i ho deixem per després, es pot donar que es justifiqui una falta encara no posada, i que quan per fi es posi, quedi sense justificar.</li>
       <li>
         <a href="docs/notesAPD.pdf" target="_blank" rel="noopener">Posem notes finals APD</a>
@@ -29,6 +30,9 @@ const DATA = [
         <li>Posem notes parcials i feedback dels instruments avaluatius</li>
         <li>El claustre docent es comunica amb l’alumnat via Moodle i/o mail de la fundació</li>
         <li>Petita <a href="docs/2026_Guia_rapida_Moodle_4_5.pdf" target="_blank">guía </a> dels canvis que ha portat l'actualització Moodle 4.5</li>
+        <li><a href="docs/MoodleRubrica.pdf" target="_blank" rel="noopener noreferrer">Rúbriques</a></li>
+        <li><a href="docs/MoodleEscala.pdf" target="_blank" rel="noopener noreferrer">Escales</a></li>
+        <li><a href="docs/MoodleCategoriesPesos.pdf" target="_blank" rel="noopener noreferrer">Configuracions i pesos</a></li>
       </ul>
     `},
   {
@@ -66,8 +70,8 @@ const DATA = [
           <a href="docs/003_GPI_1_26-27_Horaris.pdf" target="_blank">GPI1</a> |
           <a href="docs/004_GPI_2_26-27_Horaris.pdf" target="_blank">GPI2</a> |
           <a href="docs/005_DEC_1_26-27_Horaris.pdf" target="_blank">DEC1</a> |
-          <a href="docs/" target="_blank">ASIX1</a> |
-          <a href="docs/" target="_blank">ASIX2</a> 
+          <a href="docs/006_ASIX_1_26-27_Horaris.pdf" target="_blank">ASIX1</a> |
+          <a href="docs/007_ASIX_2_26-27_Horaris.pdf" target="_blank">ASIX2</a> 
         </li>
         </li>
         <li>
@@ -91,6 +95,7 @@ const DATA = [
   <a href="docs/Moduls_GI.pdf" target="_blank" rel="noopener noreferrer">Mòduls GI</a> |
   <a href="docs/Moduls_GP.pdf" target="_blank" rel="noopener noreferrer">Mòduls GP</a>
 </li>
+
       </ul>
     `},
   {
@@ -104,6 +109,8 @@ const DATA = [
         <li>Convocaràs tutories grupals</li>
         <li>Demanaràs feedback del grup-classe al claustre</li>
         <li><a href="docs/BasePresentacionsTutores.pdf" target="_blank" rel="noopener noreferrer">Model de presentació d'inici de curs</a> (atenció amb les dates, només es un model!)</li>
+        <li><a href="docs/PAT_RegistreTutories.pdf" target="_blank" rel="noopener noreferrer">Registraràs</a> les tutories individuals</li>
+        <li>Acompanyaràs <a href="docs/Eleccio-del-delegatdef.pdf" target="_blank" rel="noopener noreferrer">l'elecció de delegades</a></li>
       </ul>
     `},
   {
@@ -123,6 +130,7 @@ const DATA = [
   {
     titulo: "Canals de comunicació", contenido: `
       <p>Professora -> Tutora -> Secretaria -> Coordinadora -> Directora</p>
+      <p>Quin és el protocol en cas de <a href="docs/VagaEstudiantil_Protocol.pdf" target="_blank" rel="noopener noreferrer">vaga estudiantil?</a></p>
     `},
   {
     titulo: "Beneficis socials", contenido: `
@@ -237,3 +245,35 @@ window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(renderGrid, 120);
 });
+
+
+function obreContrasenyes() {
+  const finestra = document.createElement("div");
+
+  finestra.className = "password-modal";
+
+  finestra.innerHTML = `
+    <div class="password-modal__box">
+      <button class="password-modal__close" type="button" onclick="this.closest('.password-modal').remove()">×</button>
+
+      <h2>Contrasenyes curs 26-27</h2>
+
+      <div class="password-modal__item">
+        <strong>Professor</strong>
+        <span>fCIC+2627</span>
+      </div>
+
+      <div class="password-modal__item">
+        <strong>Sala d'estudi</strong>
+        <span>Estudiar27</span>
+      </div>
+
+      <div class="password-modal__item">
+        <strong>Disseny</strong>
+        <span>Dis26-27</span>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(finestra);
+}
