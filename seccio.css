@@ -1,0 +1,133 @@
+/* Pàgines de secció: mateixa estètica que el núvol (blanc, Montserrat, fluor) */
+
+:root{
+  --c: #FF00BA; /* per defecte; seccio.js el canvia pel color de l'etiqueta */
+}
+
+/* Barra superior amb el botó de tornar, sempre visible */
+.page__nav{
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #fff;
+  padding: 20px 24px;
+}
+
+.tornar{
+  display: inline-flex;
+  align-items: center;
+  gap: .35em;
+  color: var(--ink);
+  font-weight: 800;
+  font-size: clamp(22px, 2.4vw, 32px);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  padding: .2em .55em .2em .35em;
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  transition: background .2s ease, transform .25s cubic-bezier(.2,.9,.3,1.4);
+}
+
+.tornar__arrow{
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  flex: none;
+  transition: transform .25s cubic-bezier(.2,.9,.3,1.4);
+}
+
+.tornar:hover,
+.tornar:focus-visible{
+  background: var(--c);
+  outline: none;
+}
+
+.tornar:hover .tornar__arrow,
+.tornar:focus-visible .tornar__arrow{
+  transform: translateX(-6px);
+}
+
+/* Contingut */
+.page__main{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2vh 24px 96px;
+}
+
+.page__title{
+  margin: 0 0 .3em;
+  color: var(--c);
+  font-size: clamp(56px, 11vw, 170px);
+  font-weight: 800;
+  line-height: .95;
+  letter-spacing: -0.045em;
+}
+
+.page__content{
+  font-size: clamp(19px, 1.6vw, 23px);
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.page__content h3{
+  margin: 1.6em 0 .4em;
+  color: var(--c);
+  font-size: clamp(30px, 3.4vw, 48px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.page__content h3:first-child{ margin-top: 0; }
+
+.page__content p{ margin: 0 0 1em; }
+
+.page__content ul{
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+.page__content li{
+  position: relative;
+  padding: .55em 0 .55em 1.4em;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.page__content li:last-child{ border-bottom: none; }
+
+.page__content li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.15em;
+  width: .55em;
+  height: .55em;
+  border-radius: 50%;
+  background: var(--c);
+}
+
+.page__content strong{ font-weight: 800; }
+
+/* Enllaços: negre amb subratllat gruixut del color de la secció */
+.page__content a{
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--c);
+  text-decoration-thickness: .18em;
+  text-underline-offset: .15em;
+  transition: background .15s ease;
+}
+
+.page__content a:hover,
+.page__content a:focus-visible{
+  background: var(--c);
+  text-decoration: none;
+  outline: none;
+}
+
+@media (max-width: 520px){
+  .page__nav{ padding: 14px 16px; }
+  .page__main{ padding: 1vh 16px 64px; }
+}

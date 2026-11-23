@@ -1,206 +1,126 @@
-// Dades de l'índex i continguts
-const DATA = [
-  {
-    titulo: "ClickEdu",
-    contenido: `
-    <h3>Què és?</h3>
-    <p>És el nostre sistema de gestió escolar i una secretaria acadèmica virtual. Rebràs unes credencials per accedir-hi.</p>
 
-    <h3>Què fem a ClickEdu?</h3>
-    <ul>
-    <li>Els Cicles de Informàtica i Comunicacions, <a href="docs/Introduir_RAs_ClickEdu.pdf" target="_blank" rel="noopener noreferrer">introduïm i configurem els RA </a>dels nostres mòduls</li>
-      <li><strong>Passem llista:</strong> és molt important passar llista abans de sortir de l'aula. Si no ho fem i ho deixem per després, es pot donar que es justifiqui una falta encara no posada, i que quan per fi es posi, quedi sense justificar.</li>
-      <li>
-        <a href="docs/notesAPD.pdf" target="_blank" rel="noopener">Posem notes finals APD</a>
-        |
-        <a href="docs/notesFP.pdf" target="_blank" rel="noopener">Posem notes finals FP</a>
-      </li>
-      <li>Accedim a Moodle</li>
-      <li>Si ets tutora o coordinadora, et comuniques amb l’alumnat i les famílies des d’aquí</li>
-    </ul>
-  `
-  },
-  {
-    titulo: "Moodle", contenido: `
-      <h3>Què és?</h3>
-      <p>És el nostre entorn virtual d’aprenentatge, una classe virtual. Hi accediràs a través de ClickEdu.</p>
-      <h3>Què fem a Moodle?</h3>
-      <ul>
-       <li>Pengem la <a href="docs/PlantillaPlaDocent.docx" download>programació didàctica</a>, continguts, proves avaluatives i exàmens</li>
-        <li>Posem notes parcials i feedback dels instruments avaluatius</li>
-        <li>El claustre docent es comunica amb l’alumnat via Moodle i/o mail de la fundació</li>
-        <li>Petita <a href="docs/2026_Guia_rapida_Moodle_4_5.pdf" target="_blank">guía </a> dels canvis que ha portat l'actualització Moodle 4.5</li>
-        <li><a href="docs/MoodleRubrica.pdf" target="_blank" rel="noopener noreferrer">Rúbriques</a></li>
-        <li><a href="docs/MoodleEscala.pdf" target="_blank" rel="noopener noreferrer">Escales</a></li>
-        <li><a href="docs/MoodleCategoriesPesos.pdf" target="_blank" rel="noopener noreferrer">Configuracions i pesos</a></li>
-      </ul>
-    `},
-  {
-    titulo: "Qui és qui?", contenido: `
-      <ul>
-        <li>Secretaria acadèmica: <strong>Lourdes Abad</strong></li>
-        <li>Coordinació de pràctiques: <strong>Anna Boada</strong></li>
-        <li>Direcció de cicles formatius: <strong>Maria Pla</strong></li>
-        <li>Direcció pedagògica: <strong>Mònica Santamaria</strong></li>
-        <li>Direcció general: <strong>Carles Duarte</strong></li>
-        <li>Coordinació APD: <strong>Olga Suñol</strong></li>
-        <li>Coordinació ASIX: <strong>Jorge Wimes</strong></li>
-        <li>Responsable de comunicació: <strong>Mireia Serrano</strong></li>
-      </ul>
-    `},
-  {
-    titulo: "Documentació", contenido: `
-      <p>Documentació disponible a Secretaria Acadèmica:</p>
-      <ul>
-        <li><a href="docs/26-27_NormativaCentre.pdf" target="_blank">Normativa del centre</a></li>
-        <li><a href="docs/26-27_APD_CriterisAvaluacio.pdf" target="_blank">Criteris d’avaluació APD</a> | <a href="docs/26-27_FP_CriterisAvaluacio.pdf" target="_blank">Criteris d’avaluació Informàtica i Comunicacions</a></li>
-       <li>
-  <a href="docs/Distribucio_APGI.pdf" target="_blank" rel="noopener noreferrer">Distribució de Mòduls del CIC per APGI</a> |
-  <a href="docs/Distribucio_GPI.pdf" target="_blank" rel="noopener noreferrer">Distribució de Mòduls del CIC per GPI</a> |
-  <a href="docs/Distribucio_DEC.pdf" target="_blank" rel="noopener noreferrer">Distribució de Mòduls del CIC per DEC</a> |
-  <a href="docs/Distribucio_ASIX.pdf" target="_blank" rel="noopener noreferrer">Distribució de Mòduls del CIC per ASIX</a>
-</li>
-         
-        <li> <a href="docs/PlantillaPlaDocent.docx" download>Pla docent (plantilla)</a></li>
-        <li><a href="docs/CALENDARI_2026-2027.pdf" target="_blank">Calendari escolar</a></li>
-        <li><a href="docs/CALENDARI_2026-2027_profes.pdf" target="_blank">Calendari escolar - detall per a profes</a></li>
-        <li>Horaris: 
-          <a href="docs/001_APGI_1_26-27_Horaris.pdf" target="_blank">APGI1</a> |
-          <a href="docs/002_APGI_2_26-27_Horaris.pdf" target="_blank">APGI2</a> |
-          <a href="docs/003_GPI_1_26-27_Horaris.pdf" target="_blank">GPI1</a> |
-          <a href="docs/004_GPI_2_26-27_Horaris.pdf" target="_blank">GPI2</a> |
-          <a href="docs/005_DEC_1_26-27_Horaris.pdf" target="_blank">DEC1</a> |
-          <a href="docs/006_ASIX_1_26-27_Horaris.pdf" target="_blank">ASIX1</a> |
-          <a href="docs/007_ASIX_2_26-27_Horaris.pdf" target="_blank">ASIX2</a> 
-        </li>
-        </li>
-        <li>
-  <a href="docs/CV_APGI.pdf" target="_blank" rel="noopener noreferrer">Currículum APGI</a> |
-  <a href="docs/CV_ASIX.pdf" target="_blank" rel="noopener noreferrer">Currículum ASIX</a> |
-  <a href="docs/CV_DEC.pdf" target="_blank" rel="noopener noreferrer">Currículum DEC</a> |
-  <a href="docs/CV_GI.pdf" target="_blank" rel="noopener noreferrer">Currículum GI</a> |
-  <a href="docs/CV_GP.pdf" target="_blank" rel="noopener noreferrer">Currículum GP</a>
-</li>
-<li>
-  <a href="docs/Orientacions_APGI.pdf" target="_blank" rel="noopener noreferrer">Orientacions APGI</a> |
-  <a href="docs/Orientacions_ASIX.pdf" target="_blank" rel="noopener noreferrer">Orientacions ASIX</a> |
-  <a href="docs/Orientacions_DEC.pdf" target="_blank" rel="noopener noreferrer">Orientacions DEC</a> |
-  <a href="docs/Orientacions_GI.pdf" target="_blank" rel="noopener noreferrer">Orientacions GI</a> |
-  <a href="docs/Orientacions_GP.pdf" target="_blank" rel="noopener noreferrer">Orientacions GP</a>
-</li>
-<li>
-  <a href="docs/Moduls_APGI.pdf" target="_blank" rel="noopener noreferrer">Mòduls APGI</a> |
-  <a href="docs/Moduls_ASIX.pdf" target="_blank" rel="noopener noreferrer">Mòduls ASIX</a> |
-  <a href="docs/Moduls_DEC.pdf" target="_blank" rel="noopener noreferrer">Mòduls DEC</a> |
-  <a href="docs/Moduls_GI.pdf" target="_blank" rel="noopener noreferrer">Mòduls GI</a> |
-  <a href="docs/Moduls_GP.pdf" target="_blank" rel="noopener noreferrer">Mòduls GP</a>
-</li>
+// Pes de cada etiqueta al núvol: 3 = gran, 2 = mitjana, 1 = petita
+const WEIGHTS = {
+  "ClickEdu": 3,
+  "Moodle": 3,
+  "Qui és qui?": 2,
+  "Documentació": 3,
+  "Sóc tutora": 2,
+  "Sóc tutora de pràctiques": 1,
+  "Canals de comunicació": 1,
+  "Beneficis socials": 2
+};
 
-      </ul>
-    `},
-  {
-    titulo: "Sóc tutora", contenido: `
-      <ul>
-        <li>Presentaràs el curs a l’alumnat nou</li>
-        <li>Acompanyaràs durant l’adaptació i el curs</li>
-        <li>Faràs entrevistes inicials</li>
-        <li>Dirigiràs juntes d’avaluació</li>
-        <li>Seràs l’interlocutor amb el DOP</li>
-        <li>Convocaràs tutories grupals</li>
-        <li>Demanaràs feedback del grup-classe al claustre</li>
-        <li><a href="docs/BasePresentacionsTutores.pdf" target="_blank" rel="noopener noreferrer">Model de presentació d'inici de curs</a> (atenció amb les dates, només es un model!)</li>
-        <li><a href="docs/PAT_RegistreTutories.pdf" target="_blank" rel="noopener noreferrer">Registraràs</a> les tutories individuals</li>
-        <li>Acompanyaràs <a href="docs/Eleccio-del-delegatdef.pdf" target="_blank" rel="noopener noreferrer">l'elecció de delegades</a></li>
-      </ul>
-    `},
-  {
-    titulo: "Sóc tutora de pràctiques", contenido: `
-      <ul>
-        <li>Presentaràs el curs a l’alumnat de segon</li>
-        <li>Acompanyaràs durant el curs</li>
-        <li>Seràs l’interlocutor amb el DOP</li>
-        <li>Convocaràs tutories grupals</li>
-        <li>Dirigiràs juntes d’avaluació</li>
-        <li>Ajudaràs a assignar posicions de pràctiques amb la coordinació</li>
-        <li>Demanaràs feedback al claustre</li>
-        <li>Faràs el seguiment de pràctiques via qBID</li>
-        <li>Posaràs la nota final de pràctiques</li>
-      </ul>
-    `},
-  {
-    titulo: "Canals de comunicació", contenido: `
-      <p>Professora -> Tutora -> Secretaria -> Coordinadora -> Directora</p>
-      <p>Quin és el protocol en cas de <a href="docs/VagaEstudiantil_Protocol.pdf" target="_blank" rel="noopener noreferrer">vaga estudiantil?</a></p>
-    `},
-  {
-    titulo: "Beneficis socials", contenido: `
-      <li>Diversos descomptes a l’escolarització dins de la Institució per a treballadores.</li>
-      <li>Diversos descomptes a l’escolarització dins de la Institució per a ALUMNI.</li>
-      <li>Diversos descomptes a l’escolarització dins de la Institució per a famílies amb més de dos germans.</li>
-      <li>DiR: quota de 42.99€</li>
-      <li>Retribució flexible: oferta DKV</li>
-      <br>
-      <p>Més detalls a Secretaria Acadèmica</p>
-    `}
+// Colors barrejats, sense repetir el mateix color seguit
+function pickColors(n) {
+  const out = [];
+  let bag = [];
+  for (let i = 0; i < n; i++) {
+    if (bag.length === 0) bag = [...COLORS].sort(() => Math.random() - 0.5);
+    let idx = bag.findIndex(c => c !== out[i - 1]);
+    if (idx === -1) idx = 0;
+    out.push(bag.splice(idx, 1)[0]);
+  }
+  return out;
+}
+
+// Etiquetes extra que no obren el modal: enllaç directe o acció pròpia
+const EXTRA_TAGS = [
+  { titulo: "Contrasenyes curs 26‑27", weight: 2, action: () => obreContrasenyes() },
+  { titulo: "Brandbook de la Fundació", weight: 1, href: "docs/BRANDBOOK_FUNDACIÓ_CIC.pdf" }
 ];
 
-// Colores disponibles
-const COLORS = ["#FF00BA", "#00FFFF", "#FC371C", "#DAFDBA"];
+// Menú de dreceres que es desplega en passar per sobre d'una secció amb pàgina pròpia.
+// Si algun enllaç del contingut té data-tag, només surten aquests; si no, surten tots.
+function buildSubMenu(item) {
+  const tpl = document.createElement('template');
+  tpl.innerHTML = item.contenido;
+  let links = [...tpl.content.querySelectorAll('a[href]')];
+  if (links.some(l => l.dataset.tag)) links = links.filter(l => l.dataset.tag);
+  if (links.length === 0) return null;
 
-// Nombre de columnes segons mida de pantalla
-function getCols() {
-  const w = window.innerWidth || document.documentElement.clientWidth;
-  if (w <= 520) return 1;
-  if (w <= 900) return 2;
-  return 4;
-}
-
-// Generar paleta sense adjacències iguals
-function generateColors(rows, cols) {
-  const matrix = Array.from({ length: rows }, () => Array(cols).fill(null));
-  for (let r = 0; r < rows; r++) {
-    for (let c = 0; c < cols; c++) {
-      let available = [...COLORS];
-      if (c > 0) {
-        const left = matrix[r][c - 1];
-        available = available.filter(clr => clr !== left);
-      }
-      if (r > 0) {
-        const up = matrix[r - 1][c];
-        available = available.filter(clr => clr !== up);
-      }
-      if (available.length === 0) available = [...COLORS];
-      const chosen = available[Math.floor(Math.random() * available.length)];
-      matrix[r][c] = chosen;
+  const menu = document.createElement('div');
+  menu.className = 'submenu';
+  links.forEach(link => {
+    const a = document.createElement('a');
+    a.className = 'submenu__link';
+    a.href = link.getAttribute('href');
+    if (link.hasAttribute('download')) {
+      a.setAttribute('download', '');
+    } else {
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
     }
-  }
-  return matrix;
+    a.textContent = (link.dataset.tag || link.textContent).trim();
+    menu.appendChild(a);
+  });
+  return menu;
 }
 
-// Pintar la graella
-function renderGrid() {
+// Pintar el núvol d'etiquetes
+function renderCloud() {
   const app = document.getElementById('app');
   app.innerHTML = '';
+  const colors = pickColors(DATA.length + EXTRA_TAGS.length);
 
-  const cols = getCols();
-  const rows = Math.ceil(DATA.length / cols);
-  const colorMatrix = generateColors(rows, cols);
+  DATA.forEach((item, i) => {
+    // Seccions amb pàgina pròpia: s'obren en una pestanya nova amb el mateix color
+    if (item.pagina) {
+      const group = document.createElement('div');
+      group.className = 'tag-group';
+      group.style.setProperty('--c', colors[i]);
 
-  for (let i = 0; i < DATA.length; i++) {
-    const r = Math.floor(i / cols);
-    const c = i % cols;
-    const item = DATA[i];
+      const a = document.createElement('a');
+      a.className = `tag tag--w${WEIGHTS[item.titulo] || 2}`;
+      a.href = `seccio.html?s=${item.id}&c=${colors[i].slice(1)}`;
+      a.target = '_blank';
+      a.textContent = item.titulo;
+      group.appendChild(a);
+
+      const menu = buildSubMenu(item);
+      if (menu) {
+        group.appendChild(menu);
+        // Si la paraula és a la meitat inferior de la pantalla, el menú s'obre cap amunt
+        const place = () => {
+          const r = group.getBoundingClientRect();
+          group.classList.toggle('tag-group--up', r.top > window.innerHeight / 2);
+        };
+        group.addEventListener('mouseenter', place);
+        group.addEventListener('focusin', place);
+      }
+
+      app.appendChild(group);
+      return;
+    }
+
     const btn = document.createElement('button');
-    btn.className = 'tile';
+    btn.className = `tag tag--w${WEIGHTS[item.titulo] || 2}`;
     btn.type = 'button';
-    btn.style.background = colorMatrix[r][c];
+    btn.style.setProperty('--c', colors[i]);
     btn.setAttribute('aria-haspopup', 'dialog');
     btn.setAttribute('aria-controls', 'modal');
-    btn.dataset.index = String(i);
     btn.textContent = item.titulo;
     btn.addEventListener('click', () => openModal(i));
     app.appendChild(btn);
-  }
+  });
+
+  EXTRA_TAGS.forEach((item, j) => {
+    let el;
+    if (item.href) {
+      el = document.createElement('a');
+      el.href = item.href;
+      el.target = '_blank';
+      el.rel = 'noopener noreferrer';
+    } else {
+      el = document.createElement('button');
+      el.type = 'button';
+      el.addEventListener('click', item.action);
+    }
+    el.className = `tag tag--w${item.weight}`;
+    el.style.setProperty('--c', colors[DATA.length + j]);
+    el.textContent = item.titulo;
+    app.appendChild(el);
+  });
 }
 
 // Lògica del modal
@@ -238,13 +158,8 @@ window.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModal();
 });
 
-// Re-render a la càrrega i al redimensionar finestra
-window.addEventListener('DOMContentLoaded', renderGrid);
-let resizeTimer = null;
-window.addEventListener('resize', () => {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(renderGrid, 120);
-});
+// Pintar el núvol en carregar
+window.addEventListener('DOMContentLoaded', renderCloud);
 
 
 function obreContrasenyes() {

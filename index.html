@@ -5,14 +5,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Benvinguda | CIC FP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="CIC_CICLES_FAVICON.png" type="image/x-icon">
   <link rel="stylesheet" href="estilos.css" />
 </head>
 
 <body>
-  <main id="app" class="grid" aria-label="Índice interactivo">
+  <main id="app" class="cloud" aria-label="Índex interactiu">
     <!-- Los ítems se inyectan vía scripts.js -->
   </main>
 
@@ -24,16 +25,7 @@
     <div id="modalContent" class="modal__content"></div>
   </dialog>
 
-  <a class="sticky-brandbook-btn" 
-   href="docs/BRANDBOOK_FUNDACIÓ_CIC.pdf" 
-   target="_blank" 
-   rel="noopener noreferrer">
-  Brandbook de la Fundació
-</a>
-  <button class="sticky-password-btn" type="button" onclick="obreContrasenyes()">
-    Contrasenyes curs 26-27
-  </button>
-
+  <script src="data.js" defer></script>
   <script src="scripts.js" defer></script>
 </body>
 
