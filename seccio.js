@@ -13,7 +13,27 @@
   const title = document.getElementById('pageTitle');
   const content = document.getElementById('pageContent');
 
-  if (item) {
+  if (params.get('s') === 'acces-rapid') {
+    // Mapa web: per a cada secció, les línies (li / p) que contenen algun enllaç
+    title.textContent = 'Accés ràpid';
+    document.title = 'Accés ràpid | Benvinguda CIC FP';
+    let html = '';
+    DATA.forEach(d => {
+      const tpl = document.createElement('template');
+      tpl.innerHTML = d.contenido;
+      const lines = [...tpl.content.querySelectorAll('li, p')]
+        .filter(el => el.querySelector('a[href]'));
+      if (lines.length === 0) return;
+      html += `<h3><a class="page__section-link" href="seccio.html?s=${d.id}&c=${color.slice(1)}">${d.titulo}</a></h3>`;
+      html += '<ul>' + lines.map(el => `<li>${el.innerHTML.trim()}</li>`).join('') + '</ul>';
+    });
+    const extres = EXTRA_TAGS.filter(t => t.href);
+    if (extres.length) {
+      html += '<h3>Altres</h3><ul>' +
+        extres.map(t => `<li><a href="${t.href}">${t.titulo}</a></li>`).join('') + '</ul>';
+    }
+    content.innerHTML = html;
+  } else if (item) {
     title.textContent = item.titulo;
     content.innerHTML = item.contenido;
     document.title = `${item.titulo} | Benvinguda CIC FP`;

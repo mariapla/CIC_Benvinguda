@@ -1,9 +1,9 @@
 // Dades de l'índex i continguts
-// Els enllaços de les seccions amb pàgina pròpia (pagina: true) surten també al núvol
-// com a etiquetes secundàries. data-tag="..." en un enllaç en defineix el text curt.
+// Totes les seccions s'obren en una pàgina pròpia (seccio.html) en una pestanya nova.
+// Posa pagina: false a una secció si vols que s'obri en una finestra emergent.
 const DATA = [
   {
-    id: "clickedu", pagina: true,
+    id: "clickedu",
     titulo: "ClickEdu",
     contenido: `
     <h3>Què és?</h3>
@@ -131,21 +131,42 @@ const DATA = [
       </ul>
     `},
   {
-    id: "canals", titulo: "Canals de comunicació", contenido: `
-      <p>Professora -> Tutora -> Secretaria -> Coordinadora -> Directora</p>
-      <p>Quin és el protocol en cas de <a href="docs/VagaEstudiantil_Protocol.pdf" target="_blank" rel="noopener noreferrer">vaga estudiantil?</a></p>
+    id: "vaga", titulo: "Protocol de vaga", contenido: `
+      <p>Consulta el <a href="docs/VagaEstudiantil_Protocol.pdf" target="_blank" rel="noopener noreferrer">protocol en cas de vaga estudiantil</a>.</p>
     `},
   {
     id: "beneficis", titulo: "Beneficis socials", contenido: `
-      <li>Diversos descomptes a l’escolarització dins de la Institució per a treballadores.</li>
-      <li>Diversos descomptes a l’escolarització dins de la Institució per a ALUMNI.</li>
-      <li>Diversos descomptes a l’escolarització dins de la Institució per a famílies amb més de dos germans.</li>
-      <li>DiR: quota de 42.99€</li>
-      <li>Retribució flexible: oferta DKV</li>
-      <br>
+      <ul>
+        <li>Diversos descomptes a l’escolarització dins de la Institució per a treballadores.</li>
+        <li>Diversos descomptes a l’escolarització dins de la Institució per a ALUMNI.</li>
+        <li>Diversos descomptes a l’escolarització dins de la Institució per a famílies amb més de dos germans.</li>
+        <li>DiR: quota de 42.99€</li>
+        <li>Retribució flexible: oferta DKV | oferta Adeslas</li>
+      </ul>
       <p>Més detalls a Secretaria Acadèmica</p>
+    `},
+  {
+    id: "contrasenyes", titulo: "Contrasenyes curs 26‑27", contenido: `
+      <ul>
+        <li><strong>Professor:</strong> fCIC+2627</li>
+        <li><strong>Sala d'estudi:</strong> Estudiar27</li>
+        <li><strong>Disseny:</strong> Dis26-27</li>
+      </ul>
+    `},
+  {
+    id: "cicfest", titulo: "CIC Fest", contenido: `
+      <h3>Coneix el CIC Fest</h3>
+      <ul>
+        <li><a href="docs/CICFESTDOSSIER.pdf" target="_blank" rel="noopener noreferrer">Dossier del CIC Fest</a></li>
+        <li><a href="https://cicfest.cat" target="_blank" rel="noopener noreferrer">Web del CIC Fest: cicfest.cat</a></li>
+      </ul>
     `}
 ];
+
+// Etiquetes extra del núvol que no tenen pàgina: enllaç directe o acció pròpia
+// (surten també a "Accés ràpid", per això són aquí)
+const EXTRA_TAGS = [
+  { titulo: "Brandbook de la Fundació", weight: 1, href: "docs/BRANDBOOK_FUNDACIÓ_CIC.pdf" }];
 
 // Colors fluor (compartits entre la portada i les pàgines de secció)
 const COLORS = ["#FF00BA", "#FF3D00", "#00C2FF", "#22D400", "#A100FF", "#FF8A00"];

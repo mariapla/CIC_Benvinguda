@@ -131,3 +131,16 @@
   .page__nav{ padding: 14px 16px; }
   .page__main{ padding: 1vh 16px 64px; }
 }
+
+/* Accés ràpid: el títol de cada secció enllaça a la seva pàgina */
+.page__content h3 a.page__section-link{
+  color: var(--c);
+  text-decoration: none;
+}
+
+.page__content h3 a.page__section-link:hover,
+.page__content h3 a.page__section-link:focus-visible{
+  background: none;
+  text-decoration: underline;
+  text-decoration-thickness: .08em;
+}

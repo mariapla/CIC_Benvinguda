@@ -7,8 +7,10 @@ const WEIGHTS = {
   "Documentació": 3,
   "Sóc tutora": 2,
   "Sóc tutora de pràctiques": 1,
-  "Canals de comunicació": 1,
-  "Beneficis socials": 2
+  "Protocol de vaga": 1,
+  "Beneficis socials": 2,
+  "Contrasenyes curs 26‑27": 2,
+  "CIC Fest": 2
 };
 
 // Colors barrejats, sense repetir el mateix color seguit
@@ -23,12 +25,6 @@ function pickColors(n) {
   }
   return out;
 }
-
-// Etiquetes extra que no obren el modal: enllaç directe o acció pròpia
-const EXTRA_TAGS = [
-  { titulo: "Contrasenyes curs 26‑27", weight: 2, action: () => obreContrasenyes() },
-  { titulo: "Brandbook de la Fundació", weight: 1, href: "docs/BRANDBOOK_FUNDACIÓ_CIC.pdf" }
-];
 
 // Menú de dreceres que es desplega en passar per sobre d'una secció amb pàgina pròpia.
 // Si algun enllaç del contingut té data-tag, només surten aquests; si no, surten tots.
@@ -65,7 +61,7 @@ function renderCloud() {
 
   DATA.forEach((item, i) => {
     // Seccions amb pàgina pròpia: s'obren en una pestanya nova amb el mateix color
-    if (item.pagina) {
+    if (item.pagina !== false) {
       const group = document.createElement('div');
       group.className = 'tag-group';
       group.style.setProperty('--c', colors[i]);
@@ -75,9 +71,12 @@ function renderCloud() {
       a.href = `seccio.html?s=${item.id}&c=${colors[i].slice(1)}`;
       a.target = '_blank';
       a.textContent = item.titulo;
+      // En clicar, treiem el focus perquè en tornar a la portada no es quedi gran
+      a.addEventListener('click', () => a.blur());
       group.appendChild(a);
 
-      const menu = buildSubMenu(item);
+      // Desplegable desactivat: per veure la info cal clicar la paraula
+      const menu = item.submenu ? buildSubMenu(item) : null;
       if (menu) {
         group.appendChild(menu);
         // Si la paraula és a la meitat inferior de la pantalla, el menú s'obre cap amunt
@@ -161,34 +160,6 @@ window.addEventListener('keydown', (e) => {
 // Pintar el núvol en carregar
 window.addEventListener('DOMContentLoaded', renderCloud);
 
-
-function obreContrasenyes() {
-  const finestra = document.createElement("div");
-
-  finestra.className = "password-modal";
-
-  finestra.innerHTML = `
-    <div class="password-modal__box">
-      <button class="password-modal__close" type="button" onclick="this.closest('.password-modal').remove()">×</button>
-
-      <h2>Contrasenyes curs 26-27</h2>
-
-      <div class="password-modal__item">
-        <strong>Professor</strong>
-        <span>fCIC+2627</span>
-      </div>
-
-      <div class="password-modal__item">
-        <strong>Sala d'estudi</strong>
-        <span>Estudiar27</span>
-      </div>
-
-      <div class="password-modal__item">
-        <strong>Disseny</strong>
-        <span>Dis26-27</span>
-      </div>
-    </div>
-  `;
-
-  document.body.appendChild(finestra);
-}
+// Accés ràpid: en clicar, treiem el focus perquè en tornar no es quedi gran
+const accesRapid = document.getElementById('accesRapid');
+if (accesRapid) accesRapid.addEventListener('click', () => accesRapid.blur());
